@@ -16,7 +16,81 @@ body {
     padding: 2rem 1rem ;
     margin: 0 auto;
     background-color: aqua;
-    /* border: 2px solid black; */
- 
+    
+}
 
+
+.header-conteiner {
+
+    margin-bottom: 2rem ;
+}
+
+.header-title {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-align: center;
+} 
+
+.header-desc {
+ max-width: 570px;
+ text-align: center;
+ color: darkgoldenrod;
+ margin: 0 auto;
+}
+
+
+.main-conteiner {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, fr);
+    /* background-color: orange; */
+  
+}
+
+.card-conteiner{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+.card-img-conteiner {
+    position: relative;
+    overflow: hidden;
+    height:14rem ;
+}
+
+.card-img {
+object-fit: cover;
+object-position: center;
+position:absolute;
+width: 100%;
+}
+
+.card-conteiner:hover .card-img {
+    transform: scale(1.1);
+transition-duration: 200ms;
+
+}
+
+.card-title-conteiner {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem ;
+
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(48, 36, 36);
+    line-height: 1.5rem ;
+    margin-bottom: 0.4rem;
+
+}
+
+.card-title-anchor:hover .card-title {
+    color: rgb(92, 92, 184);
 }
